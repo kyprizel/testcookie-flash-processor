@@ -1,0 +1,5 @@
+Features for advanced users:
+    *) You can change ActionScript code
+    *) You can change cookie encryption code on Python side(cookie_encoder.py:encode_cookie) and cookie_decryption(obuscate it?) in cookie_decoder.as
+    *) You can cache generated SWFs with nginx's proxy_cache feature, don't forget to set proxy_cache_key value same as it testcookie_session
+
