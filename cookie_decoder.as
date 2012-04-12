@@ -8,4 +8,4 @@ function flash_cookie_crypt_routine(str) {
     return result;
 }
 
-getURL("javascript:void(document.cookie='#TESTCOOKIE_NAME#=" + flash_cookie_crypt_routine("#TESTCOOKIE_VALUE#") + "');void(location.reload());");
+getURL("javascript:void(document.cookie='#TESTCOOKIE_NAME#=" + flash_cookie_crypt_routine("#TESTCOOKIE_VALUE#") + "');void(location.href='" + nexturl + "');");

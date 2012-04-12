@@ -34,7 +34,7 @@ EXAMPLE CONFIGURATION
         testcookie_fallback /cookies.html?backurl=http://$host$request_uri;
         testcookie_get_only on;
         testcookie_redirect_via_refresh on;
-        testcookie_refresh_template '<html><body><script type="text/javascript" src="/swfobject.js"></script><script type="text/javascript">swfobject.embedSWF("/testcookie.swf", "cookie_installer", "100", "100", "9.0.0", "/expressInstall.swf");</script><div id="cookie_installer"></div></body></html>';
+        testcookie_refresh_template '<html><body><script type="text/javascript" src="/swfobject.js"></script><script type="text/javascript">swfobject.embedSWF("/testcookie.swf", "cookie_installer", "100", "100", "9.0.0", "/expressInstall.swf", {"nexturl":"$testcookie_nexturl"});</script><div id="cookie_installer"></div></body></html>';
 
         location = /cookies.html {
             root /var/www/public_html;
